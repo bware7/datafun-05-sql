@@ -64,6 +64,9 @@ Install into your active project virtual environment with this command:
 ```bash
 py -m pip install -r requirements.txt
 ```
+### Add Database with Two Related Tables
+
+I created a simple SQLite database (book_db) with two related tables: books and authors. The books table includes book_id, title, year_published, and author_id (a foreign key). The authors table includes author_id, first, and last. I populated these tables using CSV files under the data folder. These will be used later for the module 5 project. 
 
 ### Stage and Push Files to GitHub
 
@@ -81,3 +84,8 @@ git commit -m "after .venv setup"
 git push origin main
 ```
 
+```bash
+git add .
+git commit -m "uploaded data folder with csv files"
+git push origin main
+```
