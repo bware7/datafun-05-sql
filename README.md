@@ -74,10 +74,10 @@ I created a simple SQLite database (book_db) with two related tables: books and 
 I updated the project to include automatic database creation and population from CSV files. The following changes were made:
 
 Added db_initialize_binware.py script to:
-   Create an SQLite database (project.db) if it doesn't already exist.
-   Execute SQL commands from create_tables.sql to set up authors and books tables.
-   Insert data from authors.csv and books.csv into the respective tables, handling potential mismatches between the CSV headers and table schema.
-   Implement logging for debugging, with log messages output to log.txt.
+   - Create an SQLite database (project.db) if it doesn't already exist.
+   - Execute SQL commands from create_tables.sql to set up authors and books tables.
+   - Insert data from authors.csv and books.csv into the respective tables, handling potential mismatches between the CSV headers and table schema.
+   - Implement logging for debugging, with log messages output to log.txt.
 Created a create_tables.sql file in the sql/ folder to define the schema for both tables.
 Verified that the database was successfully created, and the data was inserted without errors.
 
@@ -89,10 +89,10 @@ python db_initialize_binware.py
 Added scripts to perform SQL operations such as inserting, updating, deleting records, and executing queries with joins, filters, and aggregations:
 
 Created db_operations_binware.py to perform:
-   Inserting additional records (insert_records.sql)
-   Updating records (update_records.sql)
-   Deleting records (delete_records.sql)
-   Executing queries (query_aggregation.sql, query_filter.sql, query_sorting.sql, query_group_by.sql, query_join.sql)
+   - Inserting additional records (insert_records.sql)
+   - Updating records (update_records.sql)
+   - Deleting records (delete_records.sql)
+   - Executing queries (query_aggregation.sql, query_filter.sql, query_sorting.sql, query_group_by.sql, query_join.sql)
 
 Run the operations script to execute all database actions:
 ```bash
